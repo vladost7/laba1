@@ -1,11 +1,36 @@
-<div class="some_nice_class">
+<div 
+    id="classno" 
+    class="classno" 
+    onclick="kakto()"
+    onmouseenter="tak()"
+    onmouseout="ept()"
+>
     <img src="http://almode.ru/uploads/posts/2020-11/1604409990_19-p-tobi-maguair-23.jpg" width="300" height="300">
 </div>
+<input
+onchange="eshe_tak_ep(event)"
+/>
+
 <div>
-    <div class="some_vtoroi_class" class="some_nice_class">Beltsev Vladislav</div>
-    <div style="color: yellow; font-size: 60px;background-color: pink; font-family: 'Bangers', cursive;" class="some_nice_class">00.00.00</div>
-    <div style="color: blue; font-size: 70px; background-color: orange; font-family: 'VT323', monospace;" class="some_nice_class">OMgU.Dostoevsky</div>
-    <div style="color: black; font-size: 80px;background-color: green; font-family: 'Gloria Hallelujah', cursive;"  class="some_nice_class">MIB-101-O-01</div>
+    <div class="chetko classno">Beltsev Vladislav</div>
+    <div style="color: yellow; 
+                font-size: 60px;
+                background-color: pink;
+                font-family: 'Bangers', cursive;
+                " class="classno"
+                >00.00.00
+                </div>
+    <div style="color: blue;
+                font-size: 70px; 
+                background-color: orange; 
+                font-family: 'VT323', monospace;
+                " class="classno"
+                >OMgU.Dostoevsky
+            </div>
+    <div style="color: black; 
+    font-size: 80px;background-color: green; 
+    font-family: 'Gloria Hallelujah', cursive;
+    " class="classno">MIB-101-O-01</div>
 
 </div>
 
@@ -17,16 +42,39 @@
     </style>
 
 <style>
-    .some_nice_class{
+    .classno{
         display: flex;
         justify-content: center;
     }
-    .some_vtoroi_class{
+    .chetko{
         color: red;
         font-size: 100px
+    }
+    .kruto{
+        cursor: pointer;
 
     }
+
 </style>
+<script>
+    function kakto(){
+        alert("Haram, he's also someone's brother =(")
+    }
+    function tak(event){
+        console.log("bruh", event);
+    }
+    function ept(event){
+        console.log("not bruh", event);
+    }
+    function eshe_tak_ep(event){
+        console.log("event", alert("bro words are superfluous..."))
+    }
+
+
+
+    //safmcwemSA
+    
+</script>
 
 
 
